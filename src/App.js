@@ -7,7 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="tc" id="1">
-        <div className="space"></div>
+        <div className="head"><center>SIDDHARTH PAL</center></div>
+        <div id="sp"></div>
         <div className="text"><center>Website under construction</center></div>
         <Box />
       </div>
