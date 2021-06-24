@@ -26,3 +26,13 @@ body, #1 {
   font-size: 60px;
   font-weight: bold;
 }
+
+@media (max-width: 650px) {
+  .head {
+  font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}

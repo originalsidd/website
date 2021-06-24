@@ -4,14 +4,15 @@ import * as THREE from "three";
 
 class Box extends Component {
 	componentDidMount() {
+		
+
 		var scene = new THREE.Scene();
 		var camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 1000);
 		var renderer = new THREE.WebGLRenderer();
-		renderer.setSize(window.innerWidth/2.4, window.innerHeight/2.4);
+		renderer.setSize(window.innerWidth/2, window.innerHeight/2);
 		this.mount.appendChild(renderer.domElement);
-
-		var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
-		var material = new THREE.MeshStandardMaterial({ color: 0xbbbbbb });
+		var geometry = new THREE.BoxGeometry(0.48, 0.48, 0.48);
+		var material = new THREE.MeshStandardMaterial({color: 0xbbbbbb});
 		var cube = new THREE.Mesh(geometry, material);
 		scene.add(cube);
 		const light = new THREE.HemisphereLight(0x00bb00, 0x77ff77, 1);

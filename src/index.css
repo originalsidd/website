@@ -21,3 +21,9 @@ code {
 #sp {
   padding: 7%;
 }
+
+@media (max-width: 650px) {
+  #sp {
+    padding: 4rem;
+  }
+}
