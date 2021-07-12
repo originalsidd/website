@@ -1,18 +1,14 @@
-import {Component} from "react";
+import React from "react";
 import './App.css';
-import Box from './Box'
+import {BrowserRouter as Router} from 'react-router-dom'
+import Home from './pages'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="tc" id="1">
-        <div className="head"><center>SIDDHARTH PAL</center></div>
-        <div id="sp"></div>
-        <div className="text"><center>Website under construction</center></div>
-        <div><Box /></div>
-      </div>
-    )
-  }
+function App() {
+  return (
+    <Router>
+      <Home />
+    </Router>
+  )
 }
 
 export default App;
