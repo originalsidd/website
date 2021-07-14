@@ -3,7 +3,7 @@ import {DLink} from './DownloadElements'
 
 const DownloadButton  = (props) => {
 	return (
-		<DLink href={"_"+props.src} download>{props.children}</DLink>
+		<DLink href={props.src} target="_blank" download>{props.children}</DLink>
 	)
 };
 

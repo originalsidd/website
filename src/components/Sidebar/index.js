@@ -1,5 +1,6 @@
 import React from 'react'
 import DownloadButton from '../Download'
+import {FaDownload} from 'react-icons/fa'
 import {
 	NavBtnLink
 } from '../Navbar/NavbarElements'
@@ -30,7 +31,7 @@ const Sidebar = ({isOpen, toggle}) => {
 				<SideBtnWrapper>
 					<DownloadButton src="https://drive.google.com/uc?export=download&id=1jGOqpA6FH4veGLJkWvPZ3jZVgfA1xfaC">
 						<NavBtnLink>
-								Resume
+							Resume <FaDownload />
 						</NavBtnLink>
 					</DownloadButton>
 				</SideBtnWrapper>

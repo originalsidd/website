@@ -13,7 +13,8 @@ import {
 	Creator,
 	WebsiteRights,
 	Text,
-	TextH
+	TextH,
+	Secret
 } from './FooterElements'
 
 const Footer = () => {
@@ -43,19 +44,19 @@ const Footer = () => {
 				<ContactContainer>
 					<ContactWrapper>
 						<ContactItem>
-							<Alink href="https://www.hackerrank.com/originalsidd">
+							<Alink target="_blank" href="https://www.hackerrank.com/originalsidd">
 								<FaHackerrank />
 								<Text>HackerRank</Text>
 							</Alink>
 						</ContactItem>
 						<ContactItem>
-							<Alink href="https://codeforces.com/profile/originalsidd">
+							<Alink target="_blank" href="https://codeforces.com/profile/originalsidd">
 								<SiCodeforces />
 								<Text>Codeforces</Text>
 							</Alink>
 						</ContactItem>
 						<ContactItem>
-							<Alink href="https://www.codechef.com/users/originalsidd">
+							<Alink target="_blank" href="https://www.codechef.com/users/originalsidd">
 								<SiCodechef />
 								<Text>CodeChef</Text>
 							</Alink>
@@ -65,19 +66,19 @@ const Footer = () => {
 				<ContactContainer>
 					<ContactWrapper>
 						<ContactItem>
-							<Alink href="https://www.linkedin.com/in/siddharthpal20/">
+							<Alink target="_blank" href="https://www.linkedin.com/in/siddharthpal20/">
 								<FaLinkedin />
 								<Text>LinkedIn</Text>
 							</Alink>
 						</ContactItem>
 						<ContactItem>
-							<Alink href="https://www.github.com/originalsidd">
+							<Alink target="_blank" href="https://www.github.com/originalsidd">
 								<FaGithub />
 								<Text>GitHub</Text>
 							</Alink>
 						</ContactItem>
 						<ContactItem>
-							<Alink href="https://dev.to/originalsidd">
+							<Alink target="_blank" href="https://dev.to/originalsidd">
 								<FaDev />
 								<Text>DEV</Text>
 							</Alink>
@@ -85,7 +86,9 @@ const Footer = () => {
 					</ContactWrapper>
 				</ContactContainer>
 			</Contact>
-			<Creator>Coded with ❤ by Siddharth Pal</Creator>
+			<Secret to="/secret_link">
+				<Creator>Coded with ❤ by Siddharth Pal</Creator>
+			</Secret>
 			<WebsiteRights>Siddharth Pal © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
 		</FooterContainer>
 	)

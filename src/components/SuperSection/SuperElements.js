@@ -8,7 +8,7 @@ export const SuperContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 0 30px;
-	height: 740px;
+	height: 760px;
 	position: relative;
 	z-index: 1;
 	

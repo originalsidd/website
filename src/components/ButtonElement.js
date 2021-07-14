@@ -8,6 +8,7 @@ export const Button = styled.a`
 	padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
 	color: ${({dark}) => (dark ? color.second : '#fff')};
 	font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+	font-weight: bold;
 	outline: none;
 	border: none;
 	cursor: pointer;

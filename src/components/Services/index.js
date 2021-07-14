@@ -1,7 +1,7 @@
 import React from 'react'
-import Icon1 from '../../images/svg1.svg'
-import Icon2 from '../../images/svg1.svg'
-import Icon3 from '../../images/svg1.svg'
+import {Button} from '../ButtonElement'
+import {ProjectsObj} from '../../Data/Data'
+import './Services.css'
 import {
 	ServicesContainer,
 	ServicesH1,
@@ -9,7 +9,8 @@ import {
 	ServicesCard,
 	ServicesIcon,
 	ServicesH2,
-	ServicesP
+	ServicesP,
+	ServicesOverlay
 } from './ServicesElements'
 
 const Services = () => {
@@ -17,21 +18,27 @@ const Services = () => {
 		<ServicesContainer id="projects">
 			<ServicesH1>My Projects</ServicesH1>
 			<ServicesWrapper>
-				<ServicesCard>
-					<ServicesIcon src={Icon1} />
-					<ServicesH2>abcd</ServicesH2>
-					<ServicesP>well well well well wellaaaaaaaaaaaaaaa</ServicesP>
-				</ServicesCard>
-				<ServicesCard>
-					<ServicesIcon src={Icon2} />
-					<ServicesH2>efgh</ServicesH2>
-					<ServicesP>well well well well well</ServicesP>
-				</ServicesCard>
-				<ServicesCard>
-					<ServicesIcon src={Icon3} />
-					<ServicesH2>ijkl</ServicesH2>
-					<ServicesP>well well well well well</ServicesP>
-				</ServicesCard>
+				{ProjectsObj.map(element => {
+					return (
+						<ServicesCard>
+							<ServicesIcon src={element.icon} />
+							<ServicesOverlay className="overlay overlay--blur">
+								<ServicesH2>{element.title}</ServicesH2>
+								<ServicesP>{element.desc}</ServicesP>
+								<br />
+								<Button
+									href={element.link}
+									target="_blank"
+									primary="false"
+									dark="true"
+								>Check it Out!
+								</Button>
+								<br />
+							</ServicesOverlay>
+						</ServicesCard>
+					)
+				})
+				}
 			</ServicesWrapper>
 		</ServicesContainer>
 	)

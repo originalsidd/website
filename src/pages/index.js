@@ -1,16 +1,12 @@
 import React, {useState} from 'react'
-import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
 import SuperSection from '../components/SuperSection'
-import InfoSection from '../components/InfoSection'
 import Services from '../components/Services'
-import Footer from '../components/Footer'
 import About from '../components/About'
-import {
-	// homeObjOne,
-	homeObjThree,
-} from '../components/InfoSection/Data'
-import {AboutObj} from '../Data/Data.js'
+import Achievements from '../components/Achievements'
+import Footer from '../components/Footer'
+import { AboutObj } from '../Data/Data.js'
 
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -23,11 +19,10 @@ const Home = () => {
 		<>
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />	
-			<SuperSection />
-			{/* <InfoSection {...homeObjOne}/> */}
+			<SuperSection isOpen={isOpen} />
 			<About {...AboutObj}/>
 			<Services />
-			<InfoSection {...homeObjThree}/>
+			<Achievements />
 			<Footer />
 		</>
 	)

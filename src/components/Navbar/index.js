@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {FaBars} from 'react-icons/fa'
+import {FaBars, FaDownload} from 'react-icons/fa'
 import {animateScroll as scroll} from 'react-scroll'
 import DownloadButton from '../Download'
 import {
@@ -37,7 +37,7 @@ const Navbar = ({ toggle }) => {
 		<>
 			<Nav scrollNav={scrollNav}>
 				<NavbarContainer>
-					<NavLogo to="/" onClick={toggleHome}>SIDD</NavLogo>
+					<NavLogo to="/" onClick={toggleHome}>SIDD&nbsp;&nbsp;&nbsp;&nbsp;</NavLogo>
 					<MobileIcon onClick={toggle}>
 						<FaBars />
 					</MobileIcon>
@@ -57,7 +57,7 @@ const Navbar = ({ toggle }) => {
 								duration={500}
 								spy={true}
 								exact="true"
-								offset={-80}
+								offset={-79}
 							>About</NavLinks>
 						</NavItem>
 						<NavItem>
@@ -66,7 +66,7 @@ const Navbar = ({ toggle }) => {
 								duration={500}
 								spy={true}
 								exact="true"
-								offset={-79}
+								offset={-78.5}
 							>Projects</NavLinks>
 						</NavItem>
 						<NavItem>
@@ -75,7 +75,7 @@ const Navbar = ({ toggle }) => {
 								duration={500}
 								spy={true}
 								exact="true"
-								offset={-78}
+								offset={-77.9}
 							>Achievements</NavLinks>
 						</NavItem>
 						<NavItem>
@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
 					<NavBtn>
 						<DownloadButton src="https://drive.google.com/uc?export=download&id=1jGOqpA6FH4veGLJkWvPZ3jZVgfA1xfaC">
 							<NavBtnLink>
-								Resume
+								Resume <FaDownload />
 							</NavBtnLink>
 						</DownloadButton>
 					</NavBtn>

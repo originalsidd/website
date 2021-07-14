@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { color } from '../../Global/global'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
 	background-color: ${color.second};
@@ -147,22 +147,22 @@ export const Alink = styled.a`
 		opacity: 1;
 		transition: 0.3s ease-out;
 	}
-	`
+`
 
-export const FootH1 = styled.h1`
+export const FootH1 = styled.div`
 	color: #fff;
-	font-size: 40px;
+	font-size: 48px;
+	font-family: 'Black Ops One';
 	padding-top: 80px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	text-align: center;
-	`
+`
 
 export const WebsiteRights = styled.div`
 	color: #fff;
 	font-size: 10px;
 	text-align: center;
 	padding: 10px;
-	/* padding-bottom: 20px; */
 `
 
 
@@ -176,5 +176,10 @@ export const Creator = styled.h3`
 		background: #fff;
 		color: ${color.first};
 		transition: 0.3s ease-in-out;
+		cursor: default;
 	}
+`
+
+export const Secret = styled(Link)`
+	text-decoration: none;
 `

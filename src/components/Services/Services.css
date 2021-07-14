@@ -1,0 +1,12 @@
+.overlay--blur {
+	backdrop-filter: blur(2px);
+}
+
+.overlay > * {
+	transform: translateY(10px);
+	transition: all 0.3s;
+}
+
+.overlay:hover > * {
+	transform: translateY(0);
+}

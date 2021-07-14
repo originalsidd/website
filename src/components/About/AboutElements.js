@@ -3,7 +3,7 @@ import {color} from '../../Global/global'
 
 export const AboutContainer = styled.div`
 	color: ${color.second};
-	background-color: #fff;
+	background-color: ${color.fifth};
 	padding: 60px 0;
 
 	@media screen and (max-width: 768px) {
@@ -28,8 +28,20 @@ export const AboutRow = styled.div`
 	grid-auto-columns: minmax(auto, 1fr);
 	align-items: center;
 	grid-template-areas: "col1 col2";
-	/* padding: 10px 0; */
-	/* margin: 10px 0; */
+	
+	@media screen and (max-width: 768px) {
+		justify-items: center;
+		grid-template-areas: 'col1' 'col2';
+		padding: 10px 0;
+		margin: 10px 0;
+	}
+`
+
+export const SkillRow = styled.div`
+	display: grid;
+	grid-auto-columns: minmax(auto, 1fr);
+	align-items: center;
+	grid-template-areas: "col1 col2";
 	
 	@media screen and (max-width: 768px) {
 		grid-template-areas: 'col1' 'col2';
@@ -39,25 +51,21 @@ export const AboutRow = styled.div`
 `
 
 export const EduRow = styled.div`
-	display: grid;
-	grid-auto-columns: minmax(auto, 1fr);
+	display: flex;
 	align-items: center;
-	grid-template-areas: "col1 col2 col3";
-	
+	justify-content: center;
+
 	@media screen and (max-width: 768px) {
-		grid-template-areas: 'col1' 'col2' 'col3';
 		padding: 10px 0;
 		margin: 10px 0;
 	}
 `
 
-export const SkillsRow = styled.div`
+export const CenterRow = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* padding: 10px 0; */
-	/* margin: 10px 0; */
 	
 	@media screen and (max-width: 768px) {
 		padding: 10px 0;
@@ -70,7 +78,7 @@ export const Column1 = styled.div`
 	padding: 0 15px;
 	grid-area: col1;
 	text-align: center;
-	`
+`
 
 export const Column2 = styled.div`
 	margin-bottom: 15px;
@@ -79,23 +87,16 @@ export const Column2 = styled.div`
 	text-align: center;
 `
 
-export const Column3 = styled.div`
-	margin-bottom: 15px;
-	padding: 0 15px;
-	grid-area: col3;
-	text-align: center;
-`
-
 export const TextWrapper = styled.div`
-	max-width: 540px;
+	max-width: 500px;
 `
 
-export const Heading = styled.h1`
+export const Heading = styled.div`
 	margin-bottom: 24px;
 	font-size: 48px;
 	line-height: 1.1;
-	font-weight: 600;
-	color: ${color.second};
+	font-family: 'Black Ops One';
+	color: ${({cl}) => cl ? color.first : color.second};
 
 	@media screen and (max-width: 480px) {
 		font-size: 32px;
@@ -105,35 +106,62 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
 	max-width: 500px;
 	margin-bottom: 35px;
-	font-size: 18px;
-	/* text-align: justify; */
+	font-size: 16px;
 	font-weight: bold;
 	line-height: 24px;
-	color: gray;
+`
+
+export const Sub = styled.p`
+	max-width: 500px;
+	margin-bottom: 35px;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 24px;
 `
 
 export const ImgWrap = styled.div`
-	max-width: 555px;
+	max-width: 400px;
 	height: 100%;
 `
 
 export const Img = styled.img`
 	width: 100%;
-	margin: 10px;
-`
-
-export const EduCard = styled.div`
-	border-radius: 50px;
-	background: ${color.second};
-	white-space: nowrap;
 	padding: 10px;
-	color: #fff;
-	font-size: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 `
 
 export const Space = styled.div`
-	height: 50px;
+	width: 100%;
+	border-top: 8px solid ${color.second};
+	height: 70px;
+	opacity: 0;
+`
+
+export const Space2 = styled.div`
+	height: 10px;
+`
+
+export const Desc = styled.h3`
+	color: ${color.first};
+	font-weight: bold;
+`
+
+export const Desc2 = styled.h3`
+	color: ${color.second};
+	font-weight: bold;
+`
+
+export const Org = styled.h3`
+	color: ${color.third};
+`
+
+export const Loc = styled.h5`
+	color: ${color.third};
+`
+
+export const Date = styled.div`
+	color: ${color.third};
+	font-size: 12px;
+	text-align: right;
+	/* font-style: italic; */
+	font-weight: bold;
 `
