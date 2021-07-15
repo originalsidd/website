@@ -11,7 +11,7 @@ export const AboutObj = {
 	headline1: "About Me",
 	headline2: "Skills",
 	headline3: "Education",
-	description: "A Creative Thinker in the world of Computer Science who	loves to dive deep into the ocean of algorithms and	trending technologies. Believer of realistic vision and transform every challenge into an opportunity.	Love to work in collaborative team environments that	lead to an effective solution in an optimal way.",
+	description: "A Creative Thinker in the world of Computer Science who	loves to dive deep into the ocean of algorithms and	trending technologies. Believer of realistic vision and like to transform every challenge into an opportunity.	Love to work in collaborative team environments that	lead to an effective solution in an optimal way.",
 	descriptionEd: "Areas of Interest: MERN Stack Development, Competitive Programming, Cloud Computing, AI and ML",
 	img: require('../images/siddwebcut.jpg').default,
 	alt: "My personal Pic",
