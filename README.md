@@ -1,3 +1,4 @@
-# My Personal Website!
+# My Personal Portfolio Website!
+The website is now live on https://www/originalsidd.com
 
-`Website Under Construction`
+Made with Js and React ♥
